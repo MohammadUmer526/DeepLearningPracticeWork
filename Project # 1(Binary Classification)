@@ -1,0 +1,21 @@
+# Step 1. Description of the Dataset
+The dataset we will use in this tutorial is the Sonar dataset.
+
+This is a dataset that describes sonar chirp returns bouncing off different services. The 60 input variables are the strength of the returns at different angles. It is a binary classification problem that requires a model to differentiate rocks from metal cylinders.
+# Step 2. Baseline Neural Network Model Performance
+
+** We will start off by importing all of the classes and functions we will need **
+
+Now we can *load the dataset* using **pandas** and split the columns into 60 input variables (X) and 1 output variable (Y).
+
+# Step 3. Re-Run The Baseline Model With Data Preparation
+
+It is a good practice to prepare your data before modeling.
+
+Neural network models are especially suitable to having consistent input values, both in scale and distribution.
+We can achieve this in *scikit-learn* using a **Pipeline:**
+http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html 
+
+Running this example provides the results below. We do see a small but very nice lift in the mean accuracy.
+
+# Step 4. Tuning Layers and Number of Neurons in The Model
